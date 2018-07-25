@@ -6,7 +6,7 @@ int main(int argc, char **argv)
 {
 	ros::init(argc,argv,"shape_publisher");
 	ros::NodeHandle nh("~");
-	ros::Rate loop_rate(.5), loop_rate_rviz(10);
+	ros::Rate loop_rate(.7), loop_rate_rviz(10);
 
 	//Polygon
 	ros::Publisher pub = nh.advertise<geometry_msgs::Polygon>("/chassis_polygon",1);
